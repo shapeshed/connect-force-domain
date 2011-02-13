@@ -29,9 +29,9 @@ For [express][8]
 
 [1]: https://github.com/cwninja/rack-force_domain 
 [2]: http://nodejs.org/
-[2]: https://no.de/
-[3]: http://nodester.com/
-[4]: http://bejes.us/
-[5]: https://github.com/isaacs/npm
-[6]: https://github.com/senchalabs/connect/
-[7]: http://expressjs.com/
+[3]: https://no.de/
+[4]: http://nodester.com/
+[5]: http://bejes.us/
+[6]: https://github.com/isaacs/npm
+[7]: https://github.com/senchalabs/connect/
+[8]: http://expressjs.com/
