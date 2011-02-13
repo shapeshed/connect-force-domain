@@ -2,7 +2,7 @@
 
 Inspired by [Rack::ForceDomain][1] it directs all traffic to a single domain with a 301 redirect.
 
-This is useful where you are hosting your [node.js][2] site with [Joyent][3], [Nodester][4] or [Bejes.us][5] and want to ensure all visitors are on the same domain.
+This is useful where you are hosting your [node][2] site with [Joyent][3], [Nodester][4] or [Bejes.us][5] and want to ensure all visitors are on the same domain.
 
 ## Installation
 
