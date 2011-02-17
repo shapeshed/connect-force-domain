@@ -1,8 +1,9 @@
 { "name": "connect-force-domain"
 , "description": "Force all visitors onto a single domain"
+, "keywords": ["no-www", "rack", "middleware", "connect"]
 , "main": "./index"
-, "author": "George Ornbo"
-, "version": "0.0.1"
+, "author": "George Ornbo <george@shapeshed.com> (http://shapeshed.com)"
+, "version": "0.0.2"
 , "repository" :
   { "type" : "git"
   , "url" : "https://github.com/shapeshed/connect-force-domain.git"
