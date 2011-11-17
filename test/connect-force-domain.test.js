@@ -1,6 +1,6 @@
 
 var connect = require('connect'),
-	force_domain = require('connect-force-domain'),
+	force_domain = require('../lib/connect-force-domain'),
 	assert = require('assert');
 
 app = connect.createServer(force_domain('shapeshed.com'));
