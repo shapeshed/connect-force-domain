@@ -31,15 +31,5 @@ module.exports = {
     assert.response(app,
       { url: '/two/folders/' },
       { status: 301 , headers: { 'Location': 'http://shapeshed.com/two/folders/' }});
-  },
-  'GET /querystring?a=1': function(){
-    assert.response(app,
-      { url: '/querystring?a=1' },
-      { status: 301 , headers: { 'Location': 'http://shapeshed.com/querystring?a=1' }});
-  },
-  'GET /querystring/?a=1': function(){
-    assert.response(app,
-      { url: '/querystring/?a=1' },
-      { status: 301 , headers: { 'Location': 'http://shapeshed.com/querystring/?a=1' }});
   }
 };
