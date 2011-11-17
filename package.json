@@ -3,13 +3,14 @@
 , "keywords": ["no-www", "rack", "middleware", "connect"]
 , "main": "./index"
 , "author": "George Ornbo <george@shapeshed.com> (http://shapeshed.com)"
-, "version": "0.0.2"
+, "version": "0.0.3"
 , "repository" :
   { "type" : "git"
   , "url" : "https://github.com/shapeshed/connect-force-domain.git"}
 , "devDependencies": {
   "connect": ">=1.7.3" }
 , "bugs" : { "url" : "https://github.com/shapeshed/connect-force-domain/issues" }
+, "scripts": { "test": "expresso" }
 , "licenses" :
   [ { "type" : "MIT"
     , "url" : "https://github.com/shapeshed/connect-force-domain/raw/master/LICENSE"
