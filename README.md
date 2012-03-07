@@ -4,7 +4,7 @@
 
 Inspired by [Rack::ForceDomain][1] it directs all traffic to a single domain with a 301 redirect.
 
-This is useful where you are hosting your [node][2] site with [Joyent][3], [Nodester][4] or [Bejes.us][5] and want to ensure all visitors are on the same domain.
+This is useful where you are hosting your [node][2] site with a PaaS provide like [Joyent][3] or [Nodester][4] and want to ensure all visitors are on the same domain.
 
 ## Installation
 
@@ -16,18 +16,27 @@ via [npm][6]
 
 For [connect][7]
 
-    var connect = require('connect'),
-        force_domain = require('connect-force-domain');
+    var connect = require('connect')
+      , http = require('http')
+      , forceDomain = require('connect-force-domain');
 
-    connect.createServer(force_domain('shapeshed.com')).listen(3000);
-
+    var app = connect()
+      .use(forceDomain('shapeshed.com'))
+     
+    http.Server(app).listen(3000);
 
 For [express][8]
 
-    var express = require('express'),
-        force_domain = require('connect-force-domain');
-        
-    express.createServer(force_domain('shapeshed.com')).listen(3000);
+    var express = require('express')
+      , forceDomain = require('connect-force-domain');
+
+    var app = module.exports = express.createServer();
+
+    app.configure(function(){
+      app.use(forceDomain('shapeshed.com');
+    });
+
+    app.listen(3000);
 
 [1]: https://github.com/cwninja/rack-force_domain 
 [2]: http://nodejs.org/
