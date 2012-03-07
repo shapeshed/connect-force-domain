@@ -4,14 +4,15 @@
 , "main": "./index"
 , "author": "George Ornbo <george@shapeshed.com> (http://shapeshed.com)"
 , "version": "0.1.0"
+, "engines": { "node": "0.4 || 0.6 || 0.7" }
 , "repository" :
   { "type" : "git"
   , "url" : "https://github.com/shapeshed/connect-force-domain.git"}
 , "devDependencies": {
   "mocha": ">=0.14.1",
-  "connect": ">=1.7.3" }
+  "connect": ">=2.0.0" }
 , "bugs" : { "url" : "https://github.com/shapeshed/connect-force-domain/issues" }
-, "scripts": { "test": "expresso" }
+, "scripts": { "test": "make test" }
 , "licenses" :
   [ { "type" : "MIT"
     , "url" : "https://github.com/shapeshed/connect-force-domain/raw/master/LICENSE"
