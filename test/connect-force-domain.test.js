@@ -1,7 +1,7 @@
-var connect = require('connect')
-  , http = require('http')
-  , assert = require('assert')
-  , forceDomain = require('../lib/connect-force-domain');
+var connect = require('connect'),
+    http = require('http'),
+    assert = require('assert'),
+    forceDomain = require('../lib/connect-force-domain');
 
 var app = connect()
   .use(forceDomain('shapeshed.com'))
