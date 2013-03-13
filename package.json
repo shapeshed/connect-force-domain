@@ -1,6 +1,7 @@
 {
   "name": "connect-force-domain",
   "author": "George Ornbo <george@shapeshed.com> (http://shapeshed.com)",
+  "description": "Connect Middleware to force visitors onto a single domain",
   "version": "0.1.2",
   "main": "./lib/connect-force-domain",
   "repository": {
