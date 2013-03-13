@@ -16,9 +16,9 @@ via [npm][6]
 
 For [connect][7]
 
-    var connect = require('connect')
-      , http = require('http')
-      , forceDomain = require('connect-force-domain');
+    var connect = require('connect'),
+        http = require('http'),
+        forceDomain = require('connect-force-domain');
 
     var app = connect()
       .use(forceDomain('shapeshed.com'))
@@ -27,8 +27,8 @@ For [connect][7]
 
 For [express][8]
 
-    var express = require('express')
-      , forceDomain = require('connect-force-domain');
+    var express = require('express'),
+        forceDomain = require('connect-force-domain');
 
     var app = module.exports = express.createServer();
 
