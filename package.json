@@ -1,31 +1,28 @@
 {
   "name": "connect-force-domain",
-  "description": "Force all visitors onto a single domain",
-  "keywords": [
-    "no-www",
-    "rack",
-    "middleware",
-    "connect"
-  ],
-  "main": "./lib/connect-force-domain",
   "author": "George Ornbo <george@shapeshed.com> (http://shapeshed.com)",
   "version": "0.1.1",
-  "engines": {
-    "node": ">= 0.5.0 < 0.7.0"
-  },
+  "main": "./lib/connect-force-domain",
   "repository": {
     "type": "git",
     "url": "https://github.com/shapeshed/connect-force-domain.git"
   },
+  "engines": {
+    "node": "*"
+  },
   "devDependencies": {
-    "mocha": ">=0.14.1",
+    "mocha": "1.8.1",
+    "grunt": "0.4.0",
+    "grunt-contrib-jshint": "0.2.0",
+    "grunt-mocha-test": "0.2.0",
+    "grunt-contrib-watch": "0.3.1",
     "connect": ">=2.0.0"
+  },
+  "scripts": {
+    "test": "grunt --stack build"
   },
   "bugs": {
     "url": "https://github.com/shapeshed/connect-force-domain/issues"
-  },
-  "scripts": {
-    "test": "./node_modules/.bin/mocha"
   },
   "licenses": [
     {
